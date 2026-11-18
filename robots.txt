@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bmcmoogant.github.io/jarvis-website/sitemap.xml

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1332" height="180" viewBox="-12 -12 1332 180" role="img" aria-label="J.A.R.V.I.S. wordmark">
+  <title>J.A.R.V.I.S.</title>
+  <g fill="#000" stroke="none">
+    <g id="letter-J">
+      <path d="M142 0 H174 L142 43 Z"/>
+      <path d="M174 12 V120 L142 156 H0 L20 125 H125 L142 107 V51 Z"/>
+    </g>
+    <g id="letter-A">
+      <path d="M322 0 H332 L292 72 H280 Z"/>
+      <path d="M339 0 H359 L411 84 H401 L386 72 H367 L342 31 L267 156 H230 L275 79 L295 76 Z"/>
+      <path d="M309 101 H375 L392 130 H292 Z"/>
+      <path d="M371 78 H384 L401 90 H415 L453 156 H417 Z"/>
+    </g>
+    <g id="letter-R">
+      <path d="M510 0 H594 L582 13 H510 Z"/>
+      <path d="M510 18 H584 L602 0 H658 L683 27 V75 L659 100 L642 102 L691 156 H649 L600 101 H542 V156 H510 V71 H641 L651 61 V41 L641 31 H510 Z"/>
+    </g>
+    <g id="letter-V">
+      <path d="M721 0 H762 L830 112 L898 0 H940 L914 42 H885 L830 127 L774 42 H744 Z"/>
+      <path d="M748 47 H771 L830 136 L888 47 H912 L849 156 H812 Z"/>
+    </g>
+    <g id="letter-I">
+      <path d="M986 0 H1018 L986 44 Z"/>
+      <path d="M1018 12 V156 H986 V52 Z"/>
+    </g>
+    <g id="letter-S">
+      <path d="M1110 0 H1213 L1191 31 H1126 L1117 41 V51 L1127 61 H1242 L1267 87 V132 L1240 156 H1141 L1163 125 H1226 L1235 115 V100 L1226 91 H1110 L1085 65 V27 Z"/>
+      <path d="M1221 0 H1267 L1247 31 H1198 Z"/>
+      <path d="M1104 125 H1156 L1133 156 H1084 Z"/>
+    </g>
+    <rect id="dot-1" x="188" y="130" width="26" height="26"/>
+    <rect id="dot-2" x="468" y="130" width="26" height="26"/>
+    <rect id="dot-3" x="714" y="130" width="26" height="26"/>
+    <rect id="dot-4" x="918" y="130" width="26" height="26"/>
+    <rect id="dot-5" x="1036" y="130" width="26" height="26"/>
+    <rect id="dot-6" x="1281" y="130" width="26" height="26"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+/* Original owner-supplied vector; white silhouette on the existing dark surfaces. */
+.jarvis-wordmark{display:block;max-width:100%;height:auto;filter:brightness(0) invert(1)}
+.brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0}
+.brand .jarvis-wordmark{width:122px;height:auto}
+.trio .hero-copy h1[data-wordmark]{line-height:1}
+.hero-copy h1[data-wordmark] .jarvis-wordmark{width:min(100%,620px);margin-inline:auto}
+.kernel-brand .jarvis-wordmark{width:min(100%,245px)}
+.footer-wordmark .jarvis-wordmark{width:100%;margin-block:12px}
+@media(max-width:600px){.brand{gap:7px}.brand>img:first-child{width:26px;height:26px}.brand .jarvis-wordmark{width:100px}.hero-copy h1[data-wordmark] .jarvis-wordmark{width:min(100%,440px)}}

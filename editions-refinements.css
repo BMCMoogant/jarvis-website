@@ -1,0 +1,43 @@
+/* Shared ASCII ink follows the pointer; its black ground disappears in difference blending. */
+.site-cursor-layer{position:fixed;inset:0;z-index:90;pointer-events:none!important;mix-blend-mode:difference;contain:strict}
+.site-cursor-layer[hidden]{display:none}.site-cursor{display:block;width:100%;height:100%;pointer-events:none!important}.art>.fluid{display:none}
+/* The field and its copy share one center at every viewport size. */
+.field .hero{display:grid;grid-template-columns:minmax(0,1fr);place-items:center;min-height:680px;height:calc(100svh - 88px);max-height:none;padding:75px var(--gutter) 100px}
+.field .hero .art{inset:0;width:100%;height:100%;max-width:none;max-height:none;aspect-ratio:auto}
+.field .hero-copy{width:min(100%,700px);max-width:700px;margin:0;justify-self:center;align-self:center}
+/* Media has a deliberate place in each edition, rather than a loose screenshot. */
+.product-media{--frame:var(--line);--frame-accent:var(--ink);position:relative;width:100%;min-width:0}
+.media-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;font:13px/1.5 Tech,monospace;padding:12px 0;color:var(--sub)}
+.media-marker{width:44px;height:5px;background:currentColor;clip-path:polygon(0 0,100% 0,calc(100% - 5px) 100%,0 100%)}
+.media-window{position:relative;padding:11px;background:var(--paper);isolation:isolate}
+.media-picture{overflow:hidden;clip-path:polygon(0 0,96% 0,100% 8%,100% 100%,4% 100%,0 92%)}
+.media-picture>img,.media-picture>video{display:block;width:100%;height:auto;aspect-ratio:2.45;object-fit:contain;background:#08151c}
+.media-contour{position:absolute;inset:0;width:100%;height:100%;pointer-events:none!important;overflow:visible;z-index:1;fill:none}
+.media-contour path{vector-effect:non-scaling-stroke}.media-contour .contour{stroke:var(--frame);stroke-width:1}.media-contour .accent{stroke:var(--frame-accent);stroke-width:3}.media-contour .detail{stroke:var(--frame);stroke-width:.7;opacity:.55}
+.product-media .loop-toggle{position:absolute;right:26px;bottom:23px;z-index:3;width:36px;height:36px;display:grid;place-items:center;padding:0;background:#09151ce6;color:white;border:1px solid #74909a;clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%)}
+.loop-toggle:hover{background:#173f52}.loop-toggle svg{width:19px;height:19px}
+.paper .experience{background:#f0f1f1}.paper .experience>.product-media{max-width:1440px;margin:auto}.paper .media-window{--paper:#f0f1f1;padding:8px}
+.paper .media-contour .detail{display:none}.paper .media-contour .accent{stroke-width:2}
+.paper .workspace{grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:50px}.paper .workspace .media-window{padding:7px}
+/* Blueprint uses asymmetry and integrated diagonal joints, never stacked borders. */
+.blueprint .product-media{--frame:#8aa8df;--frame-accent:#064cf0}
+.blueprint .media-window{background:#edf3ff;padding:16px;clip-path:polygon(0 0,96% 0,100% 8%,100% 100%,4% 100%,0 92%)}
+.blueprint .media-heading{color:#064cf0}.blueprint .media-contour .accent{stroke-width:4}
+.blueprint .explorer-screen{position:relative;padding:20px 0 30px}.blueprint .explorer-screen:after{content:'';display:block;position:absolute;left:12%;right:0;bottom:0;height:10px;background:#064cf0;clip-path:polygon(0 0,20% 0,calc(20% + 8px) 80%,65% 80%,calc(65% + 8px) 0,100% 0,100% 20%,calc(65% + 10px) 20%,calc(65% + 2px) 100%,calc(20% + 6px) 100%,calc(20% - 2px) 20%,0 20%)}
+.blueprint .system-tabs button[aria-selected=true]{background:#eaf1ff;clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 12px) 100%,0 100%);border-bottom-color:transparent}
+/* Dot Field: a readable story beside an unobscured, sticky desktop recording. */
+.field .film-chapter{min-height:190svh;padding:0 var(--gutter)}
+.field .film-sticky{justify-content:flex-end;opacity:1;height:100svh}
+.field .film-sticky>.product-media{width:66%;--frame:#394d59;--frame-accent:#7cc9f3}
+.field .film-story{width:35%;padding:28svh 10px 0 var(--gutter);margin:0;min-height:0}
+.field .film-story h2{font-size:clamp(30px,3.3vw,49px);text-shadow:none}
+.field .film-story p{font-size:16px;max-width:25ch;margin-bottom:43svh}
+.field .film-story p:last-child{margin-bottom:0}
+.field .workspace>.product-media{max-width:1440px;margin:40px auto 0;--frame:#394d59;--frame-accent:#7cc9f3}
+.field .workspace>p{max-width:1440px;margin:20px auto 0;text-align:left}
+@media(max-width:1000px){.field .film-story{width:39%;padding-left:var(--gutter)}.field .film-sticky>.product-media{width:61%}.paper .workspace{gap:30px}}
+@media(max-width:700px){.field .hero{display:grid;height:740px;min-height:calc(100svh - 70px);padding:80px var(--gutter) 100px}.field .hero-copy{width:100%}.field h1{font-size:clamp(39px,11.5vw,50px)}.field .hero .art{max-width:none;width:100%}.paper .workspace{display:block}
+.media-window,.blueprint .media-window{padding:7px}.media-contour .detail{display:none}.product-media .loop-toggle{right:16px;bottom:14px;width:32px;height:32px}.media-heading{font-size:12px}
+.field .film-chapter{min-height:0;padding:55px var(--gutter) 35px;display:flex;flex-direction:column-reverse;gap:35px}.field .film-sticky{position:relative;top:auto;height:auto;display:block}.field .film-sticky>.product-media{width:100%}.field .film-story{position:relative;width:100%;padding:0;min-height:0}.field .film-story h2{font-size:36px}.field .film-story p{font-size:16px;margin:20px 0 32px;max-width:40ch}.field .film-story p:last-child{margin-bottom:0}.blueprint .explorer-screen{padding-top:0}
+}
+@media(prefers-reduced-motion:reduce){.site-cursor-layer{display:none!important}.field .film-chapter{min-height:0;padding-top:55px;padding-bottom:55px}.field .film-sticky{position:relative;height:auto}.field .film-story{position:relative;width:100%;padding:40px 0 0}.field .film-story p{margin-bottom:30px}.field .film-sticky>.product-media{width:100%}}

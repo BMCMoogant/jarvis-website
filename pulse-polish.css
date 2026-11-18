@@ -1,0 +1,9 @@
+.pulse .product-media[data-slot="workspace"] .media-picture>img{filter:grayscale(1) contrast(1.06);transition:filter .65s var(--ease)}
+.pulse .product-media[data-slot="desktop"] .media-picture>video{filter:grayscale(.18)}
+.pulse .media-picture{isolation:isolate}.pulse .hover-code-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none!important;opacity:0;transition:opacity .25s var(--ease)}.pulse .media-picture[data-code-active="true"] .hover-code-canvas{opacity:1}
+.site-cursor-layer{background:transparent!important;mix-blend-mode:difference}.site-cursor{background:transparent!important}
+.pulse .capability-list article:hover .cap-icon{color:#c1ddfa;transition:color .3s}.pulse .media-contour .accent{transition:stroke-dashoffset 1.2s var(--ease),stroke .3s}.pulse .product-media:hover .accent{stroke:#d5eaff}
+@media(prefers-reduced-motion:reduce),(pointer:coarse){.pulse .hover-code-canvas{display:none!important}}
+
+.site-cursor-layer{mix-blend-mode:normal!important;background:transparent!important}
+.pulse .hover-code-canvas{transition:none;will-change:opacity}
